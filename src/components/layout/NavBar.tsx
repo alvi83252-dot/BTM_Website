@@ -80,7 +80,7 @@ export const NavBar: React.FC = () => {
 
     return (
         <header className="fixed inset-x-0 top-0 z-40 bg-black/75 backdrop-blur border-b border-slate-800">
-            <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6 lg:px-8">
+            <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-1 md:px-6 lg:px-8">
                 {/* logo  */}
                 <div className="flex items-center gap-3">
                     <img src={BTMLogo} alt="BTM Logo" className="h-9 w-auto"/>
