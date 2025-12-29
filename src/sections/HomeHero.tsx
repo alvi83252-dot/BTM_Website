@@ -53,9 +53,10 @@ export const HomeHero: React.FC = () => {
                             Partner with BTM 
                         </button>
                         </a>
+                        <a href="mailto:btm@brunel.ac.uk">
                         <button className="rounded-full border border-slate-500 bg-black/40 px-5 py-2.5 text-sm font-semibold text-slate-100 hover:border-sky-400 hover:text-sky-200">
-                        Join as a Student 
-                        </button>
+                        Get In Touch 
+                        </button></a>
                         </div>
                         </div>
 
