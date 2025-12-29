@@ -19,7 +19,7 @@ export const ForOrganisationsSection: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-white text-center">Why Partner with BTM?</h3>
 
                     {/* Affordable Innovation  */}
-                 <div className="bg-white/15 backdrop-blur-sm rounded-xl p-12 space-y-4 border-2 border-white/0">
+                 <div className="bg-white/15 backdrop-blur-sm rounded-xl p-2 space-y-4 border-2 border-white/0">
       <div className="flex items-start gap-3">
              <div className="text-2xl">💰</div>
                     <div>
@@ -32,7 +32,7 @@ export const ForOrganisationsSection: React.FC = () => {
       </div>
 
       {/* Academic Expertise  */}
-      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-12 space-y-4 border-2 border-white/0">
+      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-2 space-y-4 border-2 border-white/0">
       <div className="flex items-start gap-3">
              <div className="text-2xl">🎓</div>
                     <div>
@@ -45,7 +45,7 @@ export const ForOrganisationsSection: React.FC = () => {
       </div>
 
       {/* Low-Risk Experimentation  */}
-      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-12 space-y-4 border-2 border-white/0">
+      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-2 space-y-4 border-2 border-white/0">
       <div className="flex items-start gap-3">
              <div className="text-2xl">🔬</div>
                     <div>
@@ -58,7 +58,7 @@ export const ForOrganisationsSection: React.FC = () => {
       </div>
 
       {/* Purpose-Driven  */}
-       <div className="bg-white/15 backdrop-blur-sm rounded-xl p-12 space-y-4 border-2 border-white/0">
+       <div className="bg-white/15 backdrop-blur-sm rounded-xl p-2 space-y-4 border-2 border-white/0">
       <div className="flex items-start gap-3">
              <div className="text-2xl">🤝</div>
                     <div>
