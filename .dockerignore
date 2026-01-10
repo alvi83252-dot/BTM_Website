@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.gitignore
+Dockerfile
+README.md
+docker-compose.yml
+.vscode
+.env
+
+btm-frontend-external-main/node_modules
+btm-frontend-external-main/dist

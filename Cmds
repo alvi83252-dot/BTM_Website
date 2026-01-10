@@ -1,0 +1,5 @@
+# Run this command:
+docker run -p 8080:80 btm_web
+
+# Open:
+http://localhost:8080

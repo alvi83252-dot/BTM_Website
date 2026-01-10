@@ -1,0 +1,125 @@
+/* Container for the whole footer */
+.footer-container {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 20px 40px 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Restrict width to match your main page layout */
+.footer-content {
+  max-width: 1200px; /* Matches your other components */
+  margin: 0 auto;
+}
+
+/* --- LOGO SECTION --- */
+.footer-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px; /* Space between logo and columns */
+}
+
+.logo-box {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-left: 1px solid #333; /* The thin line separator */
+  padding-left: 15px;
+}
+
+/* --- COLUMNS SECTION --- */
+.footer-links-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr; /* First column slightly wider for address */
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.footer-text p {
+  color: #9ca3af; /* Grey text */
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 12px;
+}
+
+.footer-list a {
+  color: #9ca3af; /* Grey links */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer-list a:hover {
+  color: #ffffff; /* Turn white on hover */
+}
+
+/* --- BOTTOM SECTION --- */
+.footer-bottom {
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #333; /* Dark grey line */
+  margin-bottom: 30px;
+}
+
+.copyright-text {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.policy-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.policy-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.policy-links a:hover {
+  color: #ffffff;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 768px) {
+  .footer-links-wrapper {
+    grid-template-columns: 1fr; /* Stack columns vertically on phone */
+    gap: 40px;
+  }
+}

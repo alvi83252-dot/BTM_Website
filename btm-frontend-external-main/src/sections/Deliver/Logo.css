@@ -1,0 +1,36 @@
+/* Logo.css */
+
+.logo-stretch-container {
+  /* Forces the element to be the exact width of the browser window */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  
+  /* Remove all margins and set background to white */
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #ffffff;
+  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-white-box {
+  width: 100%;
+  background-color: #ffffff;
+  /* Optional: Keep these if you want the horizontal black box lines, 
+     otherwise delete them to make it perfectly white */
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.logo-svg {
+  width: 100%; /* Stretches the SVG to the window edges */
+  height: auto;
+  display: block;
+  background-color: #ffffff;
+}

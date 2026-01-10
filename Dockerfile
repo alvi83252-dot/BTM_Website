@@ -1,0 +1,36 @@
+# =========================
+# Build stage
+# =========================
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# Copy package files
+COPY btm-frontend-external-main/package.json \
+     btm-frontend-external-main/package-lock.json* ./
+
+# Install dependencies
+RUN npm ci
+
+# Copy frontend source
+COPY btm-frontend-external-main/ ./
+
+# Build Vite app
+RUN npm run build
+
+# =========================
+# Runtime stage
+# =========================
+FROM nginx:alpine
+
+# Remove default nginx config
+RUN rm /etc/nginx/conf.d/default.conf
+
+# Copy SPA nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy built assets
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
